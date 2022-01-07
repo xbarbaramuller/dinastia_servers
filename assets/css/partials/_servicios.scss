@@ -1,0 +1,40 @@
+ /* SERVICIOS */
+ .servicios .icon-box {
+    margin-bottom: 20px;
+    padding: 30px;
+    border-radius: 6px;
+    background: #fff;
+  
+    & i {
+        float: left;
+        color: #EB184D;
+        font-size: 40px;
+        line-height: 0;
+    }
+
+    & h4 {
+        margin-left: 70px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+
+    & h4 a {
+        color: #365870;
+        transition: 0.3s;
+    }
+
+    & .icon-box:hover h4 a {
+        color: #A3092D;
+    }
+
+    & p {
+        margin-left: 70px;
+        line-height: 24px;
+        font-size: 14px;
+    }
+
+    &:hover h4 a {
+        color: #A3092D;
+    }
+  }
