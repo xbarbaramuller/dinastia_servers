@@ -7,8 +7,7 @@
     bottom: 15px;
     z-index: 996;
     background: #EB184D;
-    width: 40px;
-    height: 40px;
+    @include sizes (40px, 40px);
     border-radius: 4px;
     transition: all 0.4s;
 
@@ -27,4 +26,9 @@
         color: #fff;
         line-height: 0;
     }
-  }
+{
+
+    @mixin sizes($width, $height){ 
+        height: $height;
+        width: $width;
+    {
