@@ -1,39 +1,35 @@
+@import "variables";
+
 /* BOX SERVERS */
 .box-servers {
     background: url("../img/box_servers.jpg") center top no-repeat fixed;
     background-size: cover;
     padding: 60px 0 30px 0;
     position: relative;
-  
-      & :before {
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        background: rgba(255, 255, 255, 0.92);
-        z-index: 9;
-      }
 
-      & .container, & .container-fluid {
-        position: relative;
-        z-index: 10;
-      }
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: rgba(255, 255, 255, 0.92);
+      z-index: 9;
+    }
 
-      & .card {
-        border-radius: 3px;
-        border: 0;
-        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-        margin-bottom: 30px;
-      }
+    .container, .container-fluid {
+      position: relative;
+      z-index: 10;
+    }
 
-      & .card-icon {
-        text-align: center;
-        margin-top: -32px;
-      }
+    .card {
+      border-radius: 3px;
+      border: 0;
+      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
 
-      & .card-icon i {
+      &-icon i {
         font-size: 32px;
         color: #fff;
         width: 64px;
@@ -46,34 +42,38 @@
         transition: 0.3s;
         display: inline-block;
       }
-
-      & .card-body {
+      &-body {
         padding-top: 12px;
       }
 
-      & .card-title {
+      &-title {
         font-weight: 700;
         text-align: center;
+    
+        a {
+          color: #000000;
+        }
+    
+        a:hover {
+          color: $rosa;
+        }
       }
 
-      & .card-title a {
-        color: #000000;
-      }
-
-      & .card-title a:hover {
-        color: #EB184D;
-      }
-
-      & .card-text {
+      &-text {
         color: #5e5e5e;
       }
-
-      & .card:hover .card-icon i {
+      &:hover .card-icon i {
         background: #fff;
         color: #A3092D;
       }
+    }
   }
 
+  .about-boxes .card-icon {
+    text-align: center;
+    margin-top: -32px;
+  }
+  
   @media (max-width: 1024px) {
     .box-servers {
       background-attachment: scroll;

@@ -1,7 +1,9 @@
+@import "variables";
+
 /* PRECIOS */
 .pricing .box {
     padding: 20px;
-    background: #fff;
+    background: $blanco;
     text-align: center;
     border-radius: 5px;
     position: relative;
@@ -14,88 +16,74 @@
     padding: 20px 15px;
     font-size: 16px;
     font-weight: 600;
-    color: #fff;
-    background: #f48c06;
+    color: $blanco;
+    background: $amarillo-oscuro;
   }
-.pricing h4 {
+  .pricing h4 {
     font-size: 36px;
-    color: #EB184D;
+    color: $rosa;
     font-weight: 600;
-    font-family: "Open Sans", sans-serif;
+    font-family: $font-about;
     margin-bottom: 20px;
-  
-  & h4 sup {
-    font-size: 20px;
-    top: -15px;
-    left: -3px;
-  }
-  & h4 span {
-    color: #bababa;
-    font-size: 16px;
-    font-weight: 300;
-  }
-}
 
-.pricing ul {
+    sup {
+      font-size: 20px;
+      top: -15px;
+      left: -3px;
+    }
+
+    span {
+      color: #bababa;
+      font-size: 16px;
+      font-weight: 300;
+    }
+  }
+  .pricing ul {
     padding: 0;
     list-style: none;
     color: #444444;
     text-align: center;
     line-height: 20px;
     font-size: 14px;
-  
-  & li {
-    padding-bottom: 16px;
-  }
-  & i {
-    color: #EB184D;
-    font-size: 18px;
-    padding-right: 4px;
-  }
-  & .na {
-    color: #ccc;
-    text-decoration: line-through;
-  }
-}
 
-.pricing .btn-wrap {
+    li {
+      padding-bottom: 16px;
+    }
+
+    i {
+      color: $rosa;
+      font-size: 18px;
+      padding-right: 4px;
+    }
+
+    .na {
+      color: #ccc;
+      text-decoration: line-through;
+    }
+  }
+
+  .pricing .btn-wrap {
     margin: 20px -20px -20px -20px;
     padding: 20px 15px;
     background: #f8f8f8;
     text-align: center;
-}
-
-.pricing .btn-buy {
-    background: #EB184D;
+  }
+  .pricing .btn-buy {
+    background: $rosa;
     display: inline-block;
     padding: 10px 35px;
     border-radius: 4px;
-    color: #fff;
+    color: $blanco;
     transition: none;
     font-size: 15px;
     font-weight: 400;
-    font-family: "Roboto", sans-serif;
+    font-family: $font-pricing;
     font-weight: 600;
     transition: 0.3s;
-}
 
-.btn-buy--gold {
-    @extend .btn-buy;
-  background: linear-gradient(#ffe97f,#fdb833) ;
-}
-  
-.btn-buy--platinum {
-    @extend .btn-buy;
-  background: linear-gradient(#c1eccf,#1ea896) ;
-}
-  
-.btn-buy--diamond {
-    @extend .btn-buy;
-  background: linear-gradient(#a2e1db,#8fd4cb) ;
-}
-  
-  .pricing .btn-buy:hover {
-    background: #A3092D;
+    &:hover {
+      background: $rosa-oscuro;
+    }
   }
   
   .pricing .advanced {
@@ -107,6 +95,6 @@
     z-index: 1;
     font-size: 14px;
     padding: 1px 0 3px 0;
-    background: #03071e;
-    color: #fff;
+    background: $azul-oscuro;
+    color: $blanco;
   }

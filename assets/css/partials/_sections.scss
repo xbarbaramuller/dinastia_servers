@@ -1,17 +1,18 @@
- /* SECTIONS */
- .section {
+@import "variables";
+
+/* SECTIONS */
+.section {
     padding: 60px 0;
     overflow: hidden;
-  }
-  
-  .section-bg {
-    background: linear-gradient(#03071e, #A3092D);
-  }
-  
-    .section-title {
+
+    &-bg {
+      background: linear-gradient(#03071e, $rosa-oscuro);
+    }
+    
+    &-title {
       padding-bottom: 40px;
-  
-      & h2 {
+
+      h2 {
         font-size: 14px;
         font-weight: 500;
         padding: 0;
@@ -19,26 +20,28 @@
         margin: 0 0 5px 0;
         letter-spacing: 2px;
         text-transform: uppercase;
-        color: #f48c06;
-        font-family: "Poppins", sans-serif;
+        color: $amarillo-oscuro;
+        font-family: $font-section;
+
+        &::after {
+          content: "";
+          width: 120px;
+          height: 1px;
+          display: inline-block;
+          background: $amarillo-oscuro;
+          margin: 4px 10px;
+        }
       }
 
-      & h2::after {
-        content: "";
-        width: 120px;
-        height: 1px;
-        display: inline-block;
-        background: #f48c06;
-        margin: 4px 10px;
-      }
-
-      & p {
+      p {
         margin: 0;
         margin: 0;
         font-size: 36px;
         font-weight: 700;
         text-transform: uppercase;
-        font-family: "Poppins", sans-serif;
-        color: #EB184D;
+        font-family: $font-section;
+        color: $rosa;
       }
     }
+  }
+  

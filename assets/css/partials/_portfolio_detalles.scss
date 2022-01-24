@@ -1,0 +1,64 @@
+@import "variables";
+
+/* DETALLES PORTFOLIO */
+.portfolio-details {
+    padding-top: 40px;
+
+    .portfolio-details-slider img {
+      width: 100%;
+    }
+
+    .portfolio-details-slider .swiper-pagination {
+      margin-top: 20px;
+      position: relative;
+
+      .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        background-color: $blanco;
+        opacity: 1;
+        border: 1px solid $rosa;
+
+        &-active {
+          background-color: $rosa-oscuro;
+        }
+      }
+      
+    }
+  }
+  
+  .portfolio-details .portfolio-info {
+    padding: 30px;
+    box-shadow: 0px 0 30px rgba(21, 34, 43, 0.08);
+
+    h3 {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      font-size: 15px;
+    }
+
+    ul li + li {
+      margin-top: 10px;
+    }
+  }
+  .portfolio-details .portfolio-description {
+    padding-top: 30px;
+
+    h2 {
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    p {
+      padding: 0;
+    }
+  }

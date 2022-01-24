@@ -1,28 +1,30 @@
+@import "variables";
+
 /* HEADER */
 #header {
     transition: all 0.5s;
     z-index: 997;
     padding: 20px 0;
-  
-    &.header-scrolled, &.header-inner-pages {
-            background: rgba(229, 229, 229, 1);
-            padding: 10px 0;
-    }
 
-    &.logo {
-        font-size: 32px;
-        margin: 0;
-        padding: 0;
-        line-height: 1;
-        font-weight: 700;
-        letter-spacing: 2px;
+    .header-scrolled .header-inner-pages {
+      background: rgba(229, 229, 229, 1);
+      padding: 10px 0;
     }
+    .logo {
+      font-size: 32px;
+      margin: 0;
+      padding: 0;
+      line-height: 1;
+      font-weight: 700;
+      letter-spacing: 2px;
 
-    &.logo a {
-        color: #fff;
-    }
+      a {
+        color: $blanco;
+      }
 
-    &.logo img {
+      img {
         max-height: 40px;
+      }
     }
   }
+  

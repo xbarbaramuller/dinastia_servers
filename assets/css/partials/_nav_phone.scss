@@ -1,23 +1,19 @@
+@import "./variables";
+
 /* NAV PHONE */
-.mobile-nav-toggle {
-    color: #fff;
+  .mobile-nav-toggle {
+    color: $blanco;
     font-size: 28px;
     cursor: pointer;
     display: none;
     line-height: 0;
     transition: 0.5s;
-
-    @media (max-width: 991px) {
-      & {
-        display: block;
-      }
-    }
   }
-
-  .navbar ul {
-    display: none;
-  }
-
+  
+   .navbar ul {
+      display: none;
+    } 
+  
   .navbar-mobile {
     position: fixed;
     overflow: hidden;
@@ -29,41 +25,40 @@
     transition: 0.3s;
     z-index: 999;
 
-      & .mobile-nav-toggle {
-        position: absolute;
-        top: 15px;
-        right: 15px;
-      }
+    .mobile-nav-toggle {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+    }
 
-      & ul {
-        display: block;
-        position: absolute;
-        top: 55px;
-        right: 15px;
-        bottom: 15px;
-        left: 15px;
-        padding: 10px 0;
-        border-radius: 10px;
-        background-color: #fff;
-        overflow-y: auto;
-        transition: 0.3s;
-      }
+    ul {
+      display: block;
+      position: absolute;
+      top: 55px;
+      right: 15px;
+      bottom: 15px;
+      left: 15px;
+      padding: 10px 0;
+      border-radius: 10px;
+      background-color: $blanco;
+      overflow-y: auto;
+      transition: 0.3s;
+    }
 
-    & a, & a:focus {
+    a, a:focus {
       padding: 10px 20px;
       font-size: 15px;
       color: #000000;
     }
-
-    & a:hover, & .active, & li:hover > a {
-      color: #EB184D;
+    a:hover, .active, li:hover > a {
+      color: $rosa;
     }
 
-    & .getstarted, & .getstarted:focus {
+    .getstarted, .getstarted:focus {
       margin: 15px;
     }
 
-    & .dropdown ul {
+    .dropdown ul {
       position: static;
       display: none;
       margin: 10px 20px;
@@ -71,27 +66,33 @@
       z-index: 99;
       opacity: 1;
       visibility: visible;
-      background: #fff;
+      background: $blanco ;
       box-shadow: 0px 0px 30px rgba(137, 144, 161, 0.25);
-    }
 
-    & .dropdown ul li {
-      min-width: 200px;
-    }
+        li {
+          min-width: 200px;
+        }
 
-    &.dropdown ul a {
-      padding: 10px 20px;
-    }
+        a {
+          padding: 10px 20px;
+        }
 
-    & .dropdown ul a i {
-      font-size: 12px;
-    }
+        a i {
+          font-size: 12px;
+        }
 
-    &.dropdown ul a:hover, & .dropdown ul .active:hover, & .dropdown ul li:hover > a {
-      color: #EB184D;
-    }
+        a:hover, .active:hover,  li:hover > a {
+          color: $rosa;
+        }
+      }
 
-    & .dropdown > .dropdown-active {
+      .dropdown > .dropdown-active {
+        display: block;
+      }
+  }
+
+  @media (max-width: 991px) {
+    .mobile-nav-toggle {
       display: block;
     }
   }

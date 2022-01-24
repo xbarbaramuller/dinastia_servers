@@ -1,0 +1,51 @@
+@import "variables";
+
+/* SOBRE JUEGO */
+.about {
+    padding: 120px 0;
+
+    .content h3 {
+      font-weight: 600;
+      font-size: 32px;
+      color: $rosa;
+    }
+
+    .content ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        padding-bottom: 10px;
+      }
+
+      i {
+        font-size: 20px;
+        padding-right: 4px;
+        color: $rosa;
+      }
+    }
+    .content p:last-child {
+      margin-bottom: 0;
+    }
+
+    .content .read-more {
+      font-family: $font-about;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 14px;
+      display: inline-block;
+      padding: 10px 35px 10px 35px;
+      border-radius: 4px;
+      transition: 0.5s;
+      color: $rosa;
+      border: 2px solid $rosa;
+      position: relative;
+
+      &:hover {
+        color: $blanco;
+        border: $rosa-oscuro;
+        background: $rosa;
+      }
+    }
+
+  }

@@ -1,163 +1,148 @@
+@import "variables";
+
 /* FOOTER */
 #footer {
-    background: #eb184d;;
+    background: $rosa;
     padding: 0 0 30px 0;
-    color: #fff;
+    color: $blanco;
     font-size: 14px;
 
-    & .copyright {
-        text-align: center;
-        padding-top: 30px;
+    .footer-top {
+      background: $azul-oscuro;
+      border-bottom: 1px solid #1d303c;
+      padding: 60px 0 30px 0;
+
+      .footer-info {
+        margin-bottom: 30px;
+
+        h3 {
+          font-size: 28px;
+          margin: 0 0 15px 0;
+          padding: 2px 0 2px 0;
+          line-height: 1;
+          font-weight: 700;
+        }
+  
+        p {
+          font-size: 14px;
+          line-height: 24px;
+          margin-bottom: 0;
+          font-family: $font-count;
+          color: $blanco;
+        }
       }
 
-    & .credits {
-        padding-top: 10px;
+      .social-links a {
+        font-size: 18px;
+        display: inline-block;
+        background: rgba(255, 255, 255, 0.08);
+        color: $blanco;
+        line-height: 1;
+        padding: 8px 0;
+        margin-right: 4px;
+        border-radius: 4px;
         text-align: center;
-        font-size: 13px;
-        color: #fff;
-    }
-
-    & .credits a {
+        width: 36px;
+        height: 36px;
         transition: 0.3s;
+
+        &:hover {
+          background: $rosa;
+          color: $blanco;
+          text-decoration: none;
+        }
+      }
+
+      h4 {
+        font-size: 16px;
+        font-weight: 600;
+        color: $blanco;
+        position: relative;
+        padding-bottom: 12px;
+      }
+
+      .footer-links {
+        margin-bottom: 30px;
+
+        ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
+
+        ul i {
+          padding-right: 2px;
+          color: $amarillo-oscuro;
+          font-size: 18px;
+          line-height: 1;
+        }
+
+        ul li {
+          padding: 10px 0;
+          display: flex;
+          align-items: center;
+        }
+
+        ul li:first-child {
+          padding-top: 0;
+        }
+
+        ul a {
+          color: $blanco;
+          transition: 0.3s;
+          display: inline-block;
+          line-height: 1;
+        }
+
+        ul a:hover {
+          color: $amarillo;
+        }
+      }
+      
+    .footer-newsletter form {
+        margin-top: 30px;
+        background: $blanco;
+        padding: 6px 10px;
+        position: relative;
+        border-radius: 4px;
+
+        input[type=email] {
+          border: 0;
+          padding: 4px;
+          width: calc(100% - 110px);
+        }
+        input[type=submit] {
+          position: absolute;
+          top: 0;
+          right: -2px;
+          bottom: 0;
+          border: 0;
+          background: none;
+          font-size: 16px;
+          padding: 0 20px;
+          background: $rosa;
+          color: $blanco;
+          transition: 0.3s;
+          border-radius: 0 4px 4px 0;
+
+          &:hover {
+            background: $rosa-oscuro;
+          }
+        }
+      }
     }
-}
+  }
+  #footer .copyright {
+    text-align: center;
+    padding-top: 30px;
+  }
+  #footer .credits {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 13px;
+    color: $blanco;
 
-#footer .footer-top {
-    background: #03071e;
-    border-bottom: 1px solid #1d303c;
-    padding: 60px 0 30px 0;
-  
-        & .footer-info {
-            margin-bottom: 30px;
-        }
-
-        & .footer-info h3 {
-            font-size: 28px;
-            margin: 0 0 15px 0;
-            padding: 2px 0 2px 0;
-            line-height: 1;
-            font-weight: 700;
-        }
-
-        & .footer-info p {
-            font-size: 14px;
-            line-height: 24px;
-            margin-bottom: 0;
-            font-family: "Raleway", sans-serif;
-            color: #fff;
-        }
-
-        & .social-links a {
-            font-size: 18px;
-            display: inline-block;
-            background: rgba(255, 255, 255, 0.08);
-            color: #fff;
-            line-height: 1;
-            padding: 8px 0;
-            margin-right: 4px;
-            border-radius: 4px;
-            text-align: center;
-            width: 36px;
-            height: 36px;
-            transition: 0.3s;
-        } 
-
-        & .social-links a:hover {
-            background: #EB184D;
-            color: #fff;
-            text-decoration: none;
-        }
-
-        & h4 {
-            font-size: 16px;
-            font-weight: 600;
-            color: #fff;
-            position: relative;
-            padding-bottom: 12px;
-        }
+    a {
+      transition: 0.3s;
     }
-
-$redes: { 
-    twitter: #00aced;
-    facebook: #3b5998;
-    instagram: #de1b85;
-    discord: #7289da;
-    twitch: #6441a5;
-}
-
-@each $red, $color in $redes {
-    .social-links--{$red} {
-        background-color: $color;
-}
-}
-
-#footer .footer-top .footer-links {
-    margin-bottom: 30px;
-  
-        & ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        & ul i {
-            padding-right: 2px;
-            color: #f48c06;
-            font-size: 18px;
-            line-height: 1;
-        }
-
-        & ul li {
-            padding: 10px 0;
-            display: flex;
-            align-items: center;
-        }
-
-        & ul li:first-child {
-            padding-top: 0;
-        }
-
-        & ul a {
-            color: #fff;
-            transition: 0.3s;
-            display: inline-block;
-            line-height: 1;
-        }
-        & ul a:hover {
-            color: #f8a537;
-        }
-    }
-
-#footer .footer-top .footer-newsletter form {
-    margin-top: 30px;
-    background: #fff;
-    padding: 6px 10px;
-    position: relative;
-    border-radius: 4px;
-  
-        & form input[type=email] {
-            border: 0;
-            padding: 4px;
-            width: calc(100% - 110px);
-        }
-
-        & form input[type=submit] {
-            position: absolute;
-            top: 0;
-            right: -2px;
-            bottom: 0;
-            border: 0;
-            background: none;
-            font-size: 16px;
-            padding: 0 20px;
-            background: #EB184D;
-            color: #fff;
-            transition: 0.3s;
-            border-radius: 0 4px 4px 0;
-        }
-
-        & form input[type=submit]:hover {
-            background: #A3092D;
-        }
-}
-
+  }
