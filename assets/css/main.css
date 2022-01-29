@@ -1533,6 +1533,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* PRECIOS */
 .pricing .box {
+  margin-bottom: 50px;
   padding: 20px;
   background: #fff;
   text-align: center;
