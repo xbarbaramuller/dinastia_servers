@@ -20,8 +20,8 @@ h1, h2, h3, h4, h5, h6 {
 /* BACK TOP */
 .back-to-top {
   position: fixed;
-  visibility: hidden;
-  opacity: 0;
+  visibility: visible;
+  opacity: 1;
   right: 15px;
   bottom: 15px;
   z-index: 996;
@@ -195,7 +195,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: -6px;
   left: 0;
   background-color: #f48c06;
-  visibility: hidden;
+  visibility: visible;
   width: 0px;
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
@@ -225,7 +225,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar ul > li > .getstarted:before {
-  visibility: hidden;
+  visibility: visible;
 }
 
 .navbar .dropdown ul {
@@ -275,7 +275,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar .dropdown .dropdown ul {
   top: 0;
   left: calc(100% - 30px);
-  visibility: hidden;
+  visibility: visible;
 }
 
 .navbar .dropdown .dropdown:hover > ul {
@@ -303,10 +303,6 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-}
-
-.navbar ul {
-  display: none;
 }
 
 .navbar-mobile {
@@ -393,6 +389,9 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 991px) {
   .mobile-nav-toggle {
     display: block;
+  }
+  .navbar ul {
+    display: none;
   }
 }
 

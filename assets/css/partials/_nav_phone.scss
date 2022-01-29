@@ -9,11 +9,7 @@
     line-height: 0;
     transition: 0.5s;
   }
-  
-   .navbar ul {
-      display: none;
-    } 
-  
+    
   .navbar-mobile {
     position: fixed;
     overflow: hidden;
@@ -95,4 +91,7 @@
     .mobile-nav-toggle {
       display: block;
     }
+    .navbar ul {
+      display: none;
+    }  
   }
