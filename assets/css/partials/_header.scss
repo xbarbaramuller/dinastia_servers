@@ -1,15 +1,16 @@
 @import "variables";
 
 /* HEADER */
+.header-scrolled {
+  background: rgba(229, 229, 229, 1);
+  padding: 5px 0;
+}
+
 #header {
     transition: all 0.5s;
     z-index: 997;
     padding: 20px 0;
 
-    .header-scrolled .header-inner-pages {
-      background: rgba(229, 229, 229, 1);
-      padding: 10px 0;
-    }
     .logo {
       font-size: 32px;
       margin: 0;

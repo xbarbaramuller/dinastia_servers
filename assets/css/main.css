@@ -105,16 +105,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* HEADER */
+.header-scrolled {
+  background: #e5e5e5;
+  padding: 5px 0;
+}
+
 #header {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
-}
-
-#header .header-scrolled .header-inner-pages {
-  background: #e5e5e5;
-  padding: 10px 0;
 }
 
 #header .logo {
@@ -573,6 +573,7 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
   padding: 60px 0 30px 0;
   position: relative;
+  text-align: center;
 }
 
 .box-servers::before {
@@ -825,7 +826,8 @@ h1, h2, h3, h4, h5, h6 {
 /* CONTACTO */
 .contact {
   background: #fff;
-  margin-top: 70px;
+  margin-top: 80px;
+  margin-bottom: 50px;
 }
 
 .contact .info-box {
