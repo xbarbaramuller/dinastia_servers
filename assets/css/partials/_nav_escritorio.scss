@@ -30,7 +30,7 @@
       font-size: 14px;
       text-transform: uppercase;
       font-weight: 600;
-      color: rgb(0, 0, 0);
+      color: #EB184D;
       white-space: nowrap;
       transition: 0.3s;
     }
@@ -60,7 +60,7 @@
     }
 
     a:hover, .active, .active:focus, li:hover > a {
-      color: $rosa;
+      color: $rosa-oscuro;
     }
 
     .getstarted, .getstarted:focus {
@@ -113,7 +113,7 @@
         }
 
         a:hover, .active:hover, li:hover > a {
-          color: #EB184D;
+          color: $rosa-oscuro;
         }
     }
 
