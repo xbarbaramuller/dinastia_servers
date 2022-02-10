@@ -1746,6 +1746,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .faq .accordion-collapse {
   border: 0;
+  margin-bottom: 30px;
 }
 
 .faq .accordion-button {
