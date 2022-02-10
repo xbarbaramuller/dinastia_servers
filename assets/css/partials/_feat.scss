@@ -9,10 +9,10 @@
     }
 
     .nav-link {
-    border: 1px solid #b5ccdb;
+    border: 1px solid $rosa-oscuro;
     padding: 15px;
     transition: 0.3s;
-    color: #03071e;
+    color: $rosa;
     border-radius: 0;
     display: flex;
     align-items: center;
@@ -32,6 +32,7 @@
 
         &:hover {
             color: $rosa-oscuro;
+            border: 1px solid $rosa-oscuro;
         }
 
         &.active {

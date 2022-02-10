@@ -1654,11 +1654,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .features .nav-link {
-  border: 1px solid #b5ccdb;
+  border: 1px solid #A3092D;
   padding: 15px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  color: #03071e;
+  color: #EB184D;
   border-radius: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1684,6 +1684,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .features .nav-link:hover {
   color: #A3092D;
+  border: 1px solid #A3092D;
 }
 
 .features .nav-link.active {
