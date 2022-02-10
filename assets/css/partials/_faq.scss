@@ -1,0 +1,33 @@
+@import "variables";
+
+.faq {
+    margin: 40px;
+
+    .accordion-collapse {
+        border: 0;
+    }
+
+    .accordion-button {
+        padding: 15px 15px 20px 0;
+        font-weight: 600;
+        border: 0;
+        font-size: 18px;
+        color: #03071e;
+        text-align: left;
+  
+            &:focus {
+                box-shadow: none;
+            }
+
+            &:not(.collapsed) {
+                background: none;
+                color: $rosa;
+                border-bottom: 0;
+            }
+    }      
+}
+
+.faq .accordion-body {
+    padding: 0 0 25px 0;
+    border: 0;
+}
